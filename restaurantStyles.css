@@ -2,7 +2,7 @@
     --primary-color: rgb(243, 172, 78);
     --secondary-color: rgb(241, 16, 16);
     --background-color: #f0f0f0;
-    --text-color: #A1A5A6;
+    --text-color: #606163;
     --default-text: "Open Sans";
 }
 
@@ -55,4 +55,64 @@ body{
 
 .btn span{
     padding-left: 10px;
+}
+
+.main-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    padding: 0 30px;
+    margin-top: 10px;
+    background: var(--background-color);
+    z-index: 1;
+}
+
+.logo img{
+    width: 130px;
+    cursor: pointer;
+}
+
+.menu-bar{
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+}
+
+.menu-bar .links ul li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.menu-bar .links ul li a{
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    background: linear-gradient(currentColor, currentColor);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: all 0.8;
+}
+
+.menu-bar .links ul li a:hover{
+    color: var(--secondary-color);
+    background-size: 100% 2px;
+}
+
+.menu-bar .social a{
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.5;
+}
+
+.menu-bar .social a:hover{
+    color: var(--secondary-color);
 }
