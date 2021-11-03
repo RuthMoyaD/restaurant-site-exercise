@@ -667,6 +667,14 @@ body{
     .inputConIcon{
         width: 100%;
     }
+
+    .alert{
+        width: 100%;
+    }
+
+    .alert.show{
+        transform: translateY(150%);
+    }
 }
 
 .alerts{
@@ -684,7 +692,7 @@ body{
 }
 
 .alert.show{
-    transform: translateY(50%);
+    transform: translateY(100%);
 }
 
 .alert.hide{
