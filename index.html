@@ -229,6 +229,51 @@
          </div>
     </div>
 </section>
+
+<section id="contact">
+    <div class="contact-title">
+         <h2 class="subtitles">We want to know your opinion</h2>
+         <h1 class="titles">Contact us</h1>
+    </div>
+
+    <form action="" id="form">
+         <div class="two-fiels">
+              <div class="inputConIcon">
+                   <input type="text" id="name" name="name" class="input-text" placeholder="Name">
+                   <i class="fas fa-user"></i>
+              </div>
+
+              <div class="inputConIcon">
+                   <input type="email" id="email" name="email" class="input-email" placeholder="Email">
+                   <i class="fas fa-envelope"></i>
+              </div>
+         </div>
+
+
+         <div class="fields">
+              <div class="inputConIcon textareaIcon">
+                   <textarea name="comments" id="comments" class="textarea" placeholder="Comments"></textarea>
+                   <i class="fas fa-comments"></i>
+              </div>
+         </div>
+
+         <div class="fiels-btn">
+              <input type="submit" class="btn btn-input" value="Enviar">
+         </div>
+    </form>
+</section>
+
+<div class="alertas">
+    <div id="alertError" class="alert hide">
+         <span class="icono-alert fas fa-exclamation-circle"></span>
+         <span class="msg">Error:campos de entrada vacios.</span>
+    </div>
+
+    <div id="alertSuccess" class="alert hide">
+         <span class="icono-alert fas fa-check-circle"></span>
+         <span class="msg">¡Datos enviados! Gracias por contactarnos.</span>
+    </div>
+</div>
     
     <script src="restaurant.js"></script> 
 </body>
