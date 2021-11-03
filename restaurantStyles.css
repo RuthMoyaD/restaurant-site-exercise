@@ -286,21 +286,26 @@ body{
 
 @media screen and (max-width: 850px) {
    .product-container{
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
    }
-
+}
+@media screen and (max-width: 850px){
    .product-description{
         width: 70%;
         order: 1;
    }
 
    .product-description btn{
-    padding: 10px 20px;
+        padding: 10px 20px;
    }
 
    .product-description btn:hover{
-    padding: 10px 30px;
+        padding: 10px 30px;
    }
+
 }
 
 #services{
@@ -391,4 +396,16 @@ body{
     color: var(--default-text);
     padding: 20px;
     text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+    
+   .services-container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
 }
