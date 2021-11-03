@@ -654,3 +654,17 @@ body{
 .btn-input:hover{
      padding: 15px 65px;
 }
+
+@media  screen and (max-width: 650px) {
+    #form{
+        width: 100%;
+    }
+
+    .two-fiels{
+        flex-direction: column;
+    }
+
+    .inputConIcon{
+        width: 100%;
+    }
+}

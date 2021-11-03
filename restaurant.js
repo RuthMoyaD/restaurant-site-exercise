@@ -27,3 +27,26 @@ var btnMenuOpen = document.getElementById("btnMenuOpen"),
     btnLeft.addEventListener("click", function (){
         container.scrollLeft -= container.offsetWidth;
     });
+
+    //Validation
+
+    var form = document.getElementById("form");
+
+    function validate(e){
+        var inputName = document.getElementById("name").value,
+            inputEmail = document.getElementById("email").value,
+            inputComments =document.getElementById("comments").value;
+
+        if(inputName.value == 0 || inputEmail.value == 0 || inputComments.value == 0) {
+            e.preventDefault();
+            alert("Empty field");
+        }else{
+            e.preventDefault();
+            alert("We have successfully received your information");
+            inputName.value = "";
+            inputEmail.value = "";
+            inputComments.value = "";
+        }
+    }
+
+    form.addEventListener("submit", validate);
