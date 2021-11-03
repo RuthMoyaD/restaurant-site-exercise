@@ -15,3 +15,15 @@ var btnMenuOpen = document.getElementById("btnMenuOpen"),
         menuResponsive.style.transitionDelay = "0.5s";
         menuResponsive.classList.remove("active");
     });
+
+    var container = document.querySelector(".slider"),
+    btnLeft = document.getElementById("btn-left"),
+    btnRight = document.getElementById("btn-right");
+
+    btnRight.addEventListener("click", function (){
+        container.scrollLeft += container.offsetWidth;
+    });
+
+    btnLeft.addEventListener("click", function (){
+        container.scrollLeft -= container.offsetWidth;
+    });
