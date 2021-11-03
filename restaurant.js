@@ -33,20 +33,34 @@ var btnMenuOpen = document.getElementById("btnMenuOpen"),
     var form = document.getElementById("form");
 
     function validate(e){
-        var inputName = document.getElementById("name").value,
-            inputEmail = document.getElementById("email").value,
-            inputComments =document.getElementById("comments").value;
-
-        if(inputName.value == 0 || inputEmail.value == 0 || inputComments.value == 0) {
+        var inputName = document.getElementById("name"),
+            inputEmail = document.getElementById("email"),
+            inputComments =document.getElementById("comments");
+            alertSuccess = document.getElementById("alertSuccess"),
+            alertError = document.getElementById("alertError");
+            
+        if(inputName.value === "" || inputEmail.value === "" || inputComments.value === "") {
             e.preventDefault();
-            alert("Empty field");
+            alertError.classList.remove("hide");
+            alertError.classList.add("show");
+
+            setTimeout(function() {
+                alertError.classList.remove("show");
+                alertError.classList.add("hide"); 
+           }, 2000);  
         }else{
             e.preventDefault();
-            alert("We have successfully received your information");
-            inputName.value = "";
-            inputEmail.value = "";
-            inputComments.value = "";
-        }
+               alertSuccess.classList.remove("hide");
+               alertSuccess.classList.add("show");
+
+               setTimeout(function() {
+                    alertSuccess.classList.remove("show");
+                    alertSuccess.classList.add("hide"); 
+               }, 2000);               
+               inputName.value = "";
+               inputEmail.value = "";
+               inputComments.value = "";
     }
+}
 
     form.addEventListener("submit", validate);
