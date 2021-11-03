@@ -186,7 +186,7 @@ body{
 }
 
 .second-main-menu #btn-left,
-#btn-right{
+.second-main-menu #btn-right{
     position: absolute;
     height: 10%;
     width: 50px;
@@ -202,6 +202,43 @@ body{
 }
 
 .second-main-menu #btn-left:hover,
-#btn-right:hover{
+.second-main-menu #btn-right:hover{
     background: rgb(243, 95, 95);
+    transform: translateY(5px);
+}
+
+.second-main-menu #btn-left{
+    left: 0;
+}
+
+.second-main-menu #btn-right{
+    right: 0;
+}
+
+.slider{
+    display: flex;
+}
+
+.product-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    flex-shrink: 0;
+}
+
+.product-description{
+    width: 30%;
+}
+
+.product-description h1{
+    font-size: 5vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.product-description h2{
+    text-transform: lowercase;
+    font-size: 2.2vw;
+    font-weight: 100;
 }
